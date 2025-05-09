@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Game Dev Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <script>
     function toggleContent(id) {
       const content = document.getElementById(id);
@@ -13,7 +13,6 @@
         content.classList.toggle('active');
       }
     }
-
     document.addEventListener('DOMContentLoaded', () => {
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -22,10 +21,7 @@
             observer.unobserve(entry.target);
           }
         });
-      }, {
-        threshold: 0.1
-      });
-
+      }, { threshold: 0.1 });
       document.querySelectorAll('.project').forEach(el => {
         el.classList.add('fade-in');
         observer.observe(el);
@@ -35,7 +31,7 @@
 </head>
 <body>
   <header>
-    <h1>David Mindlin - Technical Game Designer</h1>
+    <h1>Your Name — Game Developer</h1>
     <nav>
       <a href="#projects">Projects</a>
       <a href="resume.pdf" target="_blank">Print Resume</a>
@@ -50,6 +46,7 @@
 
       <div class="project">
         <h3 onclick="toggleContent('penguinAdventure')">Penguin Adventure</h3>
+        <p class="project-credit">Credits: Designer, Developer, Programmer</p>
         <div class="project-content" id="penguinAdventure">
           <p>So drunk he can barely stand, a penguin must brave the difficult walk home.</p>
           <iframe src="https://www.youtube.com/embed/mtIlUkoh0CY" allowfullscreen></iframe>
@@ -61,11 +58,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example1')">Example Project 1</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example1">
-          <p>This is a sample description for Example Project 1.</p>
+          <p>This is a sample description for Example Project 1. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example1-1.png" alt="Screenshot 1">
@@ -74,11 +71,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example2')">Example Project 2</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example2">
-          <p>This is a sample description for Example Project 2.</p>
+          <p>This is a sample description for Example Project 2. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example2-1.png" alt="Screenshot 1">
@@ -87,11 +84,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example3')">Example Project 3</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example3">
-          <p>This is a sample description for Example Project 3.</p>
+          <p>This is a sample description for Example Project 3. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example3-1.png" alt="Screenshot 1">
@@ -100,11 +97,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example4')">Example Project 4</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example4">
-          <p>This is a sample description for Example Project 4.</p>
+          <p>This is a sample description for Example Project 4. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example4-1.png" alt="Screenshot 1">
@@ -113,11 +110,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example5')">Example Project 5</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example5">
-          <p>This is a sample description for Example Project 5.</p>
+          <p>This is a sample description for Example Project 5. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example5-1.png" alt="Screenshot 1">
@@ -126,11 +123,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example6')">Example Project 6</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example6">
-          <p>This is a sample description for Example Project 6.</p>
+          <p>This is a sample description for Example Project 6. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example6-1.png" alt="Screenshot 1">
@@ -139,11 +136,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example7')">Example Project 7</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example7">
-          <p>This is a sample description for Example Project 7.</p>
+          <p>This is a sample description for Example Project 7. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example7-1.png" alt="Screenshot 1">
@@ -152,11 +149,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example8')">Example Project 8</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example8">
-          <p>This is a sample description for Example Project 8.</p>
+          <p>This is a sample description for Example Project 8. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example8-1.png" alt="Screenshot 1">
@@ -165,11 +162,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example9')">Example Project 9</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example9">
-          <p>This is a sample description for Example Project 9.</p>
+          <p>This is a sample description for Example Project 9. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example9-1.png" alt="Screenshot 1">
@@ -178,11 +175,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example10')">Example Project 10</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example10">
-          <p>This is a sample description for Example Project 10.</p>
+          <p>This is a sample description for Example Project 10. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example10-1.png" alt="Screenshot 1">
@@ -191,11 +188,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example11')">Example Project 11</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example11">
-          <p>This is a sample description for Example Project 11.</p>
+          <p>This is a sample description for Example Project 11. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example11-1.png" alt="Screenshot 1">
@@ -204,11 +201,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example12')">Example Project 12</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example12">
-          <p>This is a sample description for Example Project 12.</p>
+          <p>This is a sample description for Example Project 12. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example12-1.png" alt="Screenshot 1">
@@ -217,11 +214,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example13')">Example Project 13</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example13">
-          <p>This is a sample description for Example Project 13.</p>
+          <p>This is a sample description for Example Project 13. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example13-1.png" alt="Screenshot 1">
@@ -230,11 +227,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example14')">Example Project 14</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example14">
-          <p>This is a sample description for Example Project 14.</p>
+          <p>This is a sample description for Example Project 14. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example14-1.png" alt="Screenshot 1">
@@ -243,11 +240,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example15')">Example Project 15</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example15">
-          <p>This is a sample description for Example Project 15.</p>
+          <p>This is a sample description for Example Project 15. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example15-1.png" alt="Screenshot 1">
@@ -256,11 +253,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example16')">Example Project 16</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example16">
-          <p>This is a sample description for Example Project 16.</p>
+          <p>This is a sample description for Example Project 16. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example16-1.png" alt="Screenshot 1">
@@ -269,11 +266,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example17')">Example Project 17</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example17">
-          <p>This is a sample description for Example Project 17.</p>
+          <p>This is a sample description for Example Project 17. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example17-1.png" alt="Screenshot 1">
@@ -282,11 +279,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example18')">Example Project 18</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example18">
-          <p>This is a sample description for Example Project 18.</p>
+          <p>This is a sample description for Example Project 18. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example18-1.png" alt="Screenshot 1">
@@ -295,11 +292,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example19')">Example Project 19</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example19">
-          <p>This is a sample description for Example Project 19.</p>
+          <p>This is a sample description for Example Project 19. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example19-1.png" alt="Screenshot 1">
@@ -308,11 +305,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example20')">Example Project 20</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example20">
-          <p>This is a sample description for Example Project 20.</p>
+          <p>This is a sample description for Example Project 20. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example20-1.png" alt="Screenshot 1">
@@ -321,11 +318,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example21')">Example Project 21</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example21">
-          <p>This is a sample description for Example Project 21.</p>
+          <p>This is a sample description for Example Project 21. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example21-1.png" alt="Screenshot 1">
@@ -334,11 +331,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example22')">Example Project 22</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example22">
-          <p>This is a sample description for Example Project 22.</p>
+          <p>This is a sample description for Example Project 22. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example22-1.png" alt="Screenshot 1">
@@ -347,11 +344,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example23')">Example Project 23</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example23">
-          <p>This is a sample description for Example Project 23.</p>
+          <p>This is a sample description for Example Project 23. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example23-1.png" alt="Screenshot 1">
@@ -360,11 +357,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example24')">Example Project 24</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example24">
-          <p>This is a sample description for Example Project 24.</p>
+          <p>This is a sample description for Example Project 24. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example24-1.png" alt="Screenshot 1">
@@ -373,11 +370,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example25')">Example Project 25</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example25">
-          <p>This is a sample description for Example Project 25.</p>
+          <p>This is a sample description for Example Project 25. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example25-1.png" alt="Screenshot 1">
@@ -386,11 +383,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example26')">Example Project 26</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example26">
-          <p>This is a sample description for Example Project 26.</p>
+          <p>This is a sample description for Example Project 26. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example26-1.png" alt="Screenshot 1">
@@ -399,11 +396,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example27')">Example Project 27</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example27">
-          <p>This is a sample description for Example Project 27.</p>
+          <p>This is a sample description for Example Project 27. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example27-1.png" alt="Screenshot 1">
@@ -412,11 +409,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example28')">Example Project 28</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example28">
-          <p>This is a sample description for Example Project 28.</p>
+          <p>This is a sample description for Example Project 28. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example28-1.png" alt="Screenshot 1">
@@ -425,11 +422,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example29')">Example Project 29</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example29">
-          <p>This is a sample description for Example Project 29.</p>
+          <p>This is a sample description for Example Project 29. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example29-1.png" alt="Screenshot 1">
@@ -438,11 +435,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example30')">Example Project 30</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example30">
-          <p>This is a sample description for Example Project 30.</p>
+          <p>This is a sample description for Example Project 30. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example30-1.png" alt="Screenshot 1">
@@ -451,11 +448,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example31')">Example Project 31</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example31">
-          <p>This is a sample description for Example Project 31.</p>
+          <p>This is a sample description for Example Project 31. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example31-1.png" alt="Screenshot 1">
@@ -464,11 +461,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example32')">Example Project 32</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example32">
-          <p>This is a sample description for Example Project 32.</p>
+          <p>This is a sample description for Example Project 32. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example32-1.png" alt="Screenshot 1">
@@ -477,11 +474,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example33')">Example Project 33</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example33">
-          <p>This is a sample description for Example Project 33.</p>
+          <p>This is a sample description for Example Project 33. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example33-1.png" alt="Screenshot 1">
@@ -490,11 +487,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example34')">Example Project 34</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example34">
-          <p>This is a sample description for Example Project 34.</p>
+          <p>This is a sample description for Example Project 34. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example34-1.png" alt="Screenshot 1">
@@ -503,11 +500,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example35')">Example Project 35</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example35">
-          <p>This is a sample description for Example Project 35.</p>
+          <p>This is a sample description for Example Project 35. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example35-1.png" alt="Screenshot 1">
@@ -516,11 +513,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example36')">Example Project 36</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example36">
-          <p>This is a sample description for Example Project 36.</p>
+          <p>This is a sample description for Example Project 36. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example36-1.png" alt="Screenshot 1">
@@ -529,11 +526,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example37')">Example Project 37</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example37">
-          <p>This is a sample description for Example Project 37.</p>
+          <p>This is a sample description for Example Project 37. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example37-1.png" alt="Screenshot 1">
@@ -542,11 +539,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example38')">Example Project 38</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example38">
-          <p>This is a sample description for Example Project 38.</p>
+          <p>This is a sample description for Example Project 38. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example38-1.png" alt="Screenshot 1">
@@ -555,11 +552,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example39')">Example Project 39</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example39">
-          <p>This is a sample description for Example Project 39.</p>
+          <p>This is a sample description for Example Project 39. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example39-1.png" alt="Screenshot 1">
@@ -568,11 +565,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example40')">Example Project 40</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example40">
-          <p>This is a sample description for Example Project 40.</p>
+          <p>This is a sample description for Example Project 40. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example40-1.png" alt="Screenshot 1">
@@ -581,11 +578,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example41')">Example Project 41</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example41">
-          <p>This is a sample description for Example Project 41.</p>
+          <p>This is a sample description for Example Project 41. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example41-1.png" alt="Screenshot 1">
@@ -594,11 +591,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example42')">Example Project 42</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example42">
-          <p>This is a sample description for Example Project 42.</p>
+          <p>This is a sample description for Example Project 42. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example42-1.png" alt="Screenshot 1">
@@ -607,11 +604,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example43')">Example Project 43</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example43">
-          <p>This is a sample description for Example Project 43.</p>
+          <p>This is a sample description for Example Project 43. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example43-1.png" alt="Screenshot 1">
@@ -620,11 +617,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example44')">Example Project 44</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example44">
-          <p>This is a sample description for Example Project 44.</p>
+          <p>This is a sample description for Example Project 44. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example44-1.png" alt="Screenshot 1">
@@ -633,11 +630,11 @@
         </div>
       </div>
 
-
       <div class="project">
         <h3 onclick="toggleContent('example45')">Example Project 45</h3>
+        <p class="project-credit">Credits: Solo Developer</p>
         <div class="project-content" id="example45">
-          <p>This is a sample description for Example Project 45.</p>
+          <p>This is a sample description for Example Project 45. It demonstrates use of game design tools and unique mechanics.</p>
           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
           <div class="carousel">
             <img src="images/example45-1.png" alt="Screenshot 1">
