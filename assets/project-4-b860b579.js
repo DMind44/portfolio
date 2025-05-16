@@ -1,1 +1,0 @@
-const t="project-4",e="Project 4",o="Description for project 4.",c="https://www.youtube.com/embed/dQw4w9WgXcQ",s=["thumb4.png"],i="Solo Developer",n=["Unity"],r={id:t,title:e,description:o,youtube:c,images:s,credits:i,tech:n};export{i as credits,r as default,o as description,t as id,s as images,n as tech,e as title,c as youtube};
