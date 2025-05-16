@@ -42,16 +42,16 @@ export default function ProjectList() {
             <p><strong>Credits:</strong> {project.credits}</p>
             <div className="tech-icons">
               {project.tech.map((t, i) => (
-                <img key={i} src={`/src/assets/icons/${t.toLowerCase()}.png`} alt={t} title={t} />
+                <img key={i} src={`${import.meta.env.BASE_URL}icons/${t.toLowerCase()}.png`} alt={t} title={t} />
               ))}
             </div>
           </div>
           <p>{project.description}</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel lacus eget arcu tincidunt dictum. Sed in posuere lorem.</p>
           <div style={{ display: 'flex', gap: '1rem', marginBottom: '1rem' }}>
-            <img src="/src/assets/images/placeholder1.png" alt="placeholder 1" width="160" height="90" />
-            <img src="/src/assets/images/placeholder2.png" alt="placeholder 2" width="160" height="90" />
-            <img src="/src/assets/images/placeholder3.png" alt="placeholder 3" width="160" height="90" />
+            {project.images && project.images.map((img, i) => (
+              <img key={i} src={`${import.meta.env.BASE_URL}${img.replace(/^\//, "")}`} alt={`screenshot ${i + 1}`} width="160" height="90" />
+            ))}
           </div>
           {project.youtube && (
             <div style={{

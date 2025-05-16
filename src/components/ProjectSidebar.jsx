@@ -38,7 +38,7 @@ export default function ProjectSidebar() {
       {projects.map((p) => (
         <img
           key={p.id}
-          src={`/src/assets/images/${p.images[0]}`}
+          src={`${import.meta.env.BASE_URL}${p.images[0].replace(/^\//, '')}`}
           alt={p.title}
           onClick={() => document.getElementById(p.id)?.scrollIntoView({ behavior: 'smooth' })}
           style={{

@@ -1,12 +1,12 @@
 {
   "id": "project-2",
-  "title": "Project 2",
-  "description": "Description for project 2.",
+  "title": "Example Project 2",
+  "description": "Sample description for project 2",
   "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ",
   "images": [
-    "thumb2.png"
+    "/images/thumb2.png"
   ],
-  "credits": "Solo Developer",
+  "credits": "Developer",
   "tech": [
     "Unity"
   ]

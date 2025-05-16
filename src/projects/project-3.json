@@ -1,12 +1,12 @@
 {
   "id": "project-3",
-  "title": "Project 3",
-  "description": "Description for project 3.",
+  "title": "Example Project 3",
+  "description": "Sample description for project 3",
   "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ",
   "images": [
-    "thumb3.png"
+    "/images/thumb3.png"
   ],
-  "credits": "Solo Developer",
+  "credits": "Developer",
   "tech": [
     "React"
   ]
