@@ -1,0 +1,13 @@
+{
+  "id": "project-3",
+  "title": "Project 3",
+  "description": "Description for project 3.",
+  "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+  "images": [
+    "thumb3.png"
+  ],
+  "credits": "Solo Developer",
+  "tech": [
+    "React"
+  ]
+}
