@@ -15,18 +15,26 @@ export default function ProjectList() {
 
     loadProjects()
 
-    const onKey = (e) => {
-      const dir = e.key === 'ArrowDown' ? 1 : e.key === 'ArrowUp' ? -1 : 0
-      if (dir !== 0) {
-        const sections = document.querySelectorAll('.project')
-        const visible = Array.from(sections).findIndex(p => {
-          const rect = p.getBoundingClientRect()
-          return rect.top >= 0 && rect.bottom <= window.innerHeight + 100
-        })
-        const next = Math.min(sections.length - 1, Math.max(0, visible + dir))
-        sections[next]?.scrollIntoView({ behavior: 'smooth' })
-      }
-    }
+    let scrolling = false
+
+  const onKey = (e) => {
+    if (scrolling) return
+
+    const dir = e.key === 'ArrowDown' ? 1 : e.key === 'ArrowUp' ? -1 : 0
+    if (dir === 0) return
+
+    const sections = document.querySelectorAll('.project')
+    const current = [...sections].findIndex((p) => {
+      const rect = p.getBoundingClientRect()
+      return rect.top >= 0 && rect.top < window.innerHeight
+    })
+
+    const next = Math.min(sections.length - 1, Math.max(0, current + dir))
+    scrolling = true
+    sections[next]?.scrollIntoView({ behavior: 'smooth' })
+
+    setTimeout(() => (scrolling = false), 400) // adjust if needed
+  }
 
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
