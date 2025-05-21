@@ -4,12 +4,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>David Mindlin Portfolio</title>
-    <script type="module" crossorigin src="/portfolio/assets/index-d8910a40.js"></script>
-    <link rel="stylesheet" href="/portfolio/assets/index-abfbe695.css">
+    <title>Game Dev Portfolio</title>
+    <script type="module" crossorigin src="/portfolio/assets/index-17d90521.js"></script>
+    <link rel="stylesheet" href="/portfolio/assets/index-2e6c562d.css">
   </head>
   <body>
     <div id="root"></div>
+
     
+
+    <script>
+    function updateScrollSnap() {
+      const main = document.querySelector('main');
+      if (!main) return;
+      if (window.innerWidth >= 769) {
+        main.style.scrollSnapType = 'y mandatory';
+        document.querySelectorAll('.project').forEach(p => {
+          p.style.scrollSnapAlign = 'start';
+          p.style.minHeight = '100vh';
+        });
+      } else {
+        main.style.scrollSnapType = 'none';
+        document.querySelectorAll('.project').forEach(p => {
+          p.style.scrollSnapAlign = 'unset';
+          p.style.minHeight = 'auto';
+        });
+      }
+    }
+
+    window.addEventListener('resize', updateScrollSnap);
+    window.addEventListener('DOMContentLoaded', updateScrollSnap);
+    </script>
   </body>
 </html>
