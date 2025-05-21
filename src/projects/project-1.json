@@ -1,13 +1,13 @@
 {
   "id": "project-1",
-  "title": "Example Project 1",
-  "description": "Sample description for project 1",
-  "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+  "title": "Penguin Adventure",
+  "description": "So drunk he can barely stand, a brave penguin must make the dangerous walk home.\nAn exploration of a unique movement system, players control the timing of each foot individually. Even walking around a stationary table is a challenge. Turning too tightly or losing balance will result in the penguin toppling over comedically. In later levels, players must also dodge flying vegetables, cars, giant wrecking balls, among many other hazards.",
+  "youtube": "https://www.youtube.com/watch?v=mtIlUkoh0CY",
   "images": [
     "/images/thumb1.png"
   ],
-  "credits": "Developer",
+  "credits": "Developer, designer, programmer, level design, audio integration",
   "tech": [
-    "React"
+    "Unity"
   ]
 }
