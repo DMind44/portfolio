@@ -1,12 +1,12 @@
 
 import React from 'react'
 import Header from './components/Header'
-import ProjectList from './components/ProjectList'
 import ProjectSidebar from './components/ProjectSidebar'
+import ProjectList from './components/ProjectList'
 
 export default function App() {
   return (
-    <div className="app">
+    <>
       <Header />
       <div className="content">
         <ProjectSidebar />
@@ -14,6 +14,6 @@ export default function App() {
           <ProjectList />
         </main>
       </div>
-    </div>
+    </>
   )
 }
