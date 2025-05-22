@@ -4,7 +4,7 @@
   "description": "Sample description for project 4",
   "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ",
   "images": [
-    "/images/thumb4.png"
+    "images/thumb4.png"
   ],
   "credits": "Developer",
   "tech": [
