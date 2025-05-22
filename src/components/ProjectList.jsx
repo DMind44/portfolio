@@ -33,6 +33,7 @@ export default function ProjectList({ onProjectMetadata }) {
         <div className="project" key={project.id || index} id={project.id || `project-${index}`}>
           <h3>{project.title}</h3>
           <p><em>{project.logline}</em></p>
+          <p>{project.description}</p>
           <div style={{
             display: 'flex',
             justifyContent: 'space-between',
