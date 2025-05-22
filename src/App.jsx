@@ -1,16 +1,17 @@
-
-import React, { useState, useEffect } from 'react'
-import Header from './components/Header'
-import ProjectSidebar from './components/ProjectSidebar'
-import ProjectList from './components/ProjectList'
+import React, { useState, useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import ProjectSidebar from './components/ProjectSidebar';
+import ProjectList from './components/ProjectList';
+import About from './components/About';
 
 export default function App() {
-  const [projectMetadata, setProjectMetadata] = useState([])
+  const [projectMetadata, setProjectMetadata] = useState([]);
 
   useEffect(() => {
     const el = document.querySelector('.project');
     if (el) {
-      const yOffset = -1; // force re-snapping just past 0
+      const yOffset = -1;
       const y = el.getBoundingClientRect().top + window.scrollY + yOffset;
       setTimeout(() => {
         window.scrollTo({ top: y, behavior: 'smooth' });
@@ -22,11 +23,21 @@ export default function App() {
     <>
       <Header />
       <div className="content">
-        <ProjectSidebar projects={projectMetadata} />
-        <main>
-          <ProjectList onProjectMetadata={setProjectMetadata} />
-        </main>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <ProjectSidebar projects={projectMetadata} />
+                <main>
+                  <ProjectList onProjectMetadata={setProjectMetadata} />
+                </main>
+              </>
+            }
+          />
+          <Route path="/about" element={<About />} />
+        </Routes>
       </div>
     </>
-  )
+  );
 }
