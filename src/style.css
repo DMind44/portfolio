@@ -133,24 +133,9 @@ iframe, img {
   }
 }
 
-/* Hide toggle by default */
-.sidebar-toggle {
-  display: none;
-}
 
 @media (max-width: 768px) {
-  .sidebar-toggle {
-    display: block;
-    position: fixed;
-    left: 1rem;
-    top: 4.5rem;
-    z-index: 1200;
-    background: #333;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    cursor: pointer;
-  }
+  
 
   .sidebar {
     position: fixed;
@@ -180,4 +165,56 @@ iframe, img {
   position: static;
   width: 100%;
   margin-bottom: 1rem;
+}
+
+.sidebar img {
+  transition: transform 0.3s ease, border 0.3s ease;
+  border: 2px solid transparent;
+  border-radius: 6px;
+}
+
+
+
+.sidebar img {
+  transition: transform 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid transparent;
+  border-radius: 6px;
+}
+
+
+
+/* Hide toggle on desktop */
+.sidebar-toggle {
+  display: none;
+}
+
+/* Show toggle only on small screens */
+@media (max-width: 768px) {
+  .sidebar-toggle {
+    display: block;
+    position: fixed;
+    left: 1rem;
+    top: 4.5rem;
+    z-index: 1200;
+    background: #333;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+}
+
+.sidebar img {
+  transition: transform 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid transparent;
+  border-radius: 6px;
+}
+
+.sidebar img.active {
+  border: 2px solid white;
+  transform: scale(1.1);
+  box-shadow:
+    0 0 12px 4px rgba(255, 255, 255, 0.6),
+    0 4px 10px rgba(0, 0, 0, 0.4);
+  z-index: 10;
 }
