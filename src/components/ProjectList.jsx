@@ -21,7 +21,20 @@ export default function ProjectList() {
       {projects.map((project, index) => (
         <div className="project" key={project.id || index} id={project.id}>
           <h3>{project.title}</h3>
-          <p><strong>Credits:</strong> {project.credits}</p>
+<p><em>{project.logline}</em></p>
+          <div style={{
+  display: 'flex',
+  justifyContent: 'space-between',
+  alignItems: 'center',
+  flexWrap: 'wrap'
+}}>
+  <p style={{ margin: 0 }}><strong>Credits:</strong> {project.credits}</p>
+  <div className="tech-icons">
+    {project.tech?.map((t, i) => (
+      <img key={i} src={`${import.meta.env.BASE_URL}icons/${t.toLowerCase()}.png`} alt={t} title={t} />
+    ))}
+  </div>
+</div>
           <div className="tech-icons">
             {project.tech?.map((t, i) => (
               <img key={i} src={`${import.meta.env.BASE_URL}icons/${t.toLowerCase()}.png`} alt={t} />

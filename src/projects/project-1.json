@@ -1,7 +1,8 @@
 {
   "id": "project-1",
   "title": "Penguin Adventure",
-  "description": "So drunk he can barely stand, a brave penguin must make the dangerous walk home.\nAn exploration of a unique movement system, players control the timing of each foot individually. Even walking around a stationary table is a challenge. Turning too tightly or losing balance will result in the penguin toppling over comedically. In later levels, players must also dodge flying vegetables, cars, giant wrecking balls, among many other hazards.",
+  "logline": "So drunk he can barely stand, a brave penguin must make the dangerous walk home.",
+  "description": "An exploration of a unique movement system, players control the timing of each foot individually. Even walking around a stationary table is a challenge. Turning too tightly or losing balance will result in the penguin toppling over comedically. In later levels, players must also dodge flying vegetables, cars, giant wrecking balls, among many other hazards.",
   "youtube": "https://www.youtube.com/embed/mtIlUkoh0CY",
   "images": [
     "/images/thumb1.png"
