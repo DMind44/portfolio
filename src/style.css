@@ -133,9 +133,24 @@ iframe, img {
   }
 }
 
+/* Hide toggle by default */
+.sidebar-toggle {
+  display: none;
+}
 
 @media (max-width: 768px) {
-  
+  .sidebar-toggle {
+    display: block;
+    position: fixed;
+    left: 1rem;
+    top: 4.5rem;
+    z-index: 1200;
+    background: #333;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+  }
 
   .sidebar {
     position: fixed;
@@ -159,33 +174,10 @@ iframe, img {
     width: 100%;
     margin-bottom: 0.5rem;
   }
-
-  /* Hide toggle by default */
-
-
-/* Show only on mobile */
-@media (max-width: 768px) {
-  
-}
 }
 
-/* Hide toggle by default */
-.sidebar-toggle {
-  display: none;
-}
-
-/* Show only on mobile */
-@media (max-width: 768px) {
-  .sidebar-toggle {
-    display: block;
-    position: fixed;
-    left: 1rem;
-    top: 4.5rem;
-    z-index: 1200;
-    background: #333;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    cursor: pointer;
-  }
+.sidebar-toggle.inside {
+  position: static;
+  width: 100%;
+  margin-bottom: 1rem;
 }

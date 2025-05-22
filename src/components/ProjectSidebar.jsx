@@ -25,10 +25,20 @@ export default function ProjectSidebar({ projects }) {
 
   return (
     <>
-      <button className="sidebar-toggle" onClick={() => setIsOpen(!isOpen)}>
-        {isOpen ? 'Close Projects' : 'Projects'}
-      </button>
+      {!isOpen && (
+        <button className="sidebar-toggle" onClick={() => setIsOpen(true)}>
+          Projects
+        </button>
+      )}
       <div className={`sidebar ${isOpen ? 'open' : ''}`}>
+        {isOpen && (
+          <button
+            className="sidebar-toggle inside"
+            onClick={() => setIsOpen(false)}
+          >
+            Close Projects
+          </button>
+        )}
         {projects.map((proj, i) => (
           <img
             key={i}
