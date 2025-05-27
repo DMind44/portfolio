@@ -1,13 +1,14 @@
 {
   "id": "project-3",
-  "title": "Example Project 3",
-  "description": "Sample description for project 3",
+  "title": "Unchained",
+  "logline": "Tactics meet empathy; diplomacy and building trust is your great weapon.",
+  "description": "Tactical RPG where you build bonds with allies to unlock abilities, negotiate with enemies to recruit them, and shape your journey through choices that blend strategy, diplomacy, and emotional storytelling. Play as Enra, a gentle botanist, as she follows in her father’s footsteps in search of a powerful artifact, The Chain.",
   "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ",
   "images": [
     "images/thumb3.png"
   ],
-  "credits": "Developer",
+  "credits": "Usability",
   "tech": [
-    "React"
+    "Unity"
   ]
 }

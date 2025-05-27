@@ -1,13 +1,12 @@
 {
   "id": "project-4",
-  "title": "Example Project 4",
-  "description": "Sample description for project 4",
+  "title": "Now Hiring: Shadow Government",
+  "logline": "Play as job recruiters in the shadow government competing to get your cohorts hired, and you must stop at no end to do so -- even if it means digging up dirt on your coworkers' applicants.",
+  "description": "A snappy party game centered around debating and creative improvisation. Expose the other job recruiters' applicants with liabilities, and argue your way to getting your own applicants hired! Dozens of original character cards and liabilities allow for endless potential cohorts.",
   "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ",
   "images": [
     "images/thumb4.png"
   ],
-  "credits": "Developer",
-  "tech": [
-    "Unity"
-  ]
+  "credits": "Usability and Playtest Lead",
+  "tech": []
 }
