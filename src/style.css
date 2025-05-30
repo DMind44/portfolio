@@ -1,9 +1,17 @@
 
+:root {
+  --accent-color: #667EAD;
+  --button-color: #0E2148;
+  --background-color: #0E2148;
+  --text-color: #E3D095;
+}
+
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #000;
-  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: var(--accent-color);
+  color: var(--text-color);
   font-size: 18px;
   overflow: hidden;
 }
@@ -13,7 +21,7 @@ body {
   height: 100vh;
 }
 header {
-  background-color: #111;
+  background-color: var(--accent-color);
   padding: 1rem;
   position: sticky;
   top: 0;
@@ -27,8 +35,8 @@ header {
   gap: 1rem;
 }
 button {
-  background-color: #00bcd4;
-  color: #000;
+  background-color: var(--button-color);
+  color: var(--text-color);
   border: none;
   padding: 0.6rem 1rem;
   border-radius: 5px;
@@ -55,11 +63,12 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: #222;
+  background-color: var(--background-color);
   border-bottom: 2px solid #000;
 }
 h1, h2, h3 {
-  color: #00e6e6;
+  color: var(--text-color);
+  font-size: 2.5rem;
 }
 iframe {
   width: 100%;
@@ -69,7 +78,7 @@ iframe {
 }
 .sidebar {
   width: 120px;
-  background-color: #111;
+  background-color: var(--accent-color);
   padding: 1rem 0;
   display: flex;
   flex-direction: column;

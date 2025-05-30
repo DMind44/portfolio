@@ -5,7 +5,7 @@ export default function Header() {
   const navigate = useNavigate()
   return (
     <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-      <div style={{ color: '#fff', fontWeight: 'bold', fontSize: '1rem' }}>
+      <div style={{ color: '#E3D095', fontWeight: 'bold', fontSize: '1.3rem' }}>
         David Mindlin – Technical Game Designer
       </div>
       <div className="nav-buttons">

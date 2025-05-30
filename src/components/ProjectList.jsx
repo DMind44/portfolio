@@ -31,7 +31,7 @@ export default function ProjectList({ onProjectMetadata }) {
     <section id="projects">
       {projects.map((project, index) => (
         <div className="project" key={project.id || index} id={project.id || `project-${index}`}>
-          <h3>{project.title}</h3>
+          <h1>{project.title}</h1>
           <p><em>{project.logline}</em></p>
           <p>{project.description}</p>
           <div style={{
