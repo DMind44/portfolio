@@ -343,3 +343,21 @@ iframe, img {
     line-height: 1.35;
   }
 }
+
+
+/* Rounded corners styling for modern look */
+header,
+.sidebar,
+.project,
+.project-content,
+.button,
+nav a,
+.about-container,
+.project-meta,
+.project-title,
+.project-tech-icons,
+.about-headshot,
+.carousel img,
+iframe {
+  border-radius: 12px;
+}
