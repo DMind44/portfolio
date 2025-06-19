@@ -25,7 +25,7 @@ export default function App() {
       <div className="content">
         <Routes>
           <Route
-            path="/"
+            path="/projects"
             element={
               <>
                 <ProjectSidebar projects={projectMetadata} />

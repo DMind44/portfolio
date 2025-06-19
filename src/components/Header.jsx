@@ -9,7 +9,8 @@ export default function Header() {
         David Mindlin – Technical Game Designer
       </div>
       <div className="nav-buttons">
-        <button onClick={() => navigate('/')}>Projects</button>
+        <button onClick={() => navigate('/')}>Home</button>
+        <button onClick={() => navigate('/projects')}>Projects</button>
         <button onClick={() => navigate('/about')}>About Me</button>
         <button onClick={() => window.open(`${import.meta.env.BASE_URL}resume.pdf`, '_blank')}>
           Resume
