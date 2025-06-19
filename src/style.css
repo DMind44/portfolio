@@ -228,6 +228,14 @@ iframe, img {
   z-index: 10;
 }
 
+.sidebar img.inactive {
+  filter: none;
+  opacity: 1;
+  border: 2px solid #E3D095; /* match body text color */
+  box-shadow: 0 0 12px #E3D095;
+  transform: scale(1.05);
+  z-index: 1;
+}
 
 
 /* Responsive fix for mid-height viewports */

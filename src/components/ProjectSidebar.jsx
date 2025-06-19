@@ -80,7 +80,7 @@ export default function ProjectSidebar({ projects }) {
               }
               setIsOpen(false);
             }}
-            className={activeProject === proj.id ? 'active' : ''}
+            className={activeProject === proj.id ? 'active' : 'inactive'}
             alt={proj.title}
             title={proj.title}
           />
