@@ -17,7 +17,7 @@ export default function ProjectList({ onProjectMetadata }) {
         const metadata = data.map((proj, index) => ({
           id: proj.id || `project-${index}`,
           title: proj.title,
-          thumb: proj.images?.[0] ? `${import.meta.env.BASE_URL}${proj.images[0]}` : '',
+          thumb: proj.thumbnail ?  `${import.meta.env.BASE_URL}${proj.thumbnail}`: `${import.meta.env.BASE_URL}${proj.images[0]}`,
           tech: proj.tech || []
         }))
         onProjectMetadata(metadata)
