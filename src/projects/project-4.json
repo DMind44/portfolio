@@ -4,9 +4,7 @@
   "logline": "Play as job recruiters in the shadow government competing to get your cohorts hired, and you must stop at no end to do so -- even if it means digging up dirt on your coworkers' applicants.",
   "description": "\"Now Hiring: Shadow Government\" is a snappy party game centered around debating and creative improvisation. Expose the other job recruiters' applicants with liabilities, and argue your way to getting your own applicants hired! Dozens of original character cards and liabilities allow for endless potential cohorts.\nI contributed to the initial creation of the rules through several iterations. I worked with teammates on card ideation since the primary feature of the game is the zany characters and scenarios. My main responsibilities included the conducting of playtests and compilation of playtest data in order to make actionable changes in the game rules and features.",  
   "youtube": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-  "images": [
-    "images/nowhiringlogo.png"
-  ],
+  "thumbnail": "images/nowhiringlogo.png",
   "credits": "Usability and Playtest Lead",
   "tech": []
 }
