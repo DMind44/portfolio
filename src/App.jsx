@@ -4,6 +4,7 @@ import Header from './components/Header';
 import ProjectSidebar from './components/ProjectSidebar';
 import ProjectList from './components/ProjectList';
 import About from './components/About';
+import Homepage from './components/Homepage';
 
 export default function App() {
   const [projectMetadata, setProjectMetadata] = useState([]);
@@ -24,6 +25,10 @@ export default function App() {
       <Header />
       <div className="content">
         <Routes>
+          <Route
+            path="/"
+            element={<Homepage/>}
+          />
           <Route
             path="/projects"
             element={
