@@ -12,7 +12,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-bottom: 24px;
+    /* margin-bottom: 24px; */
     color: #fff;
 }
 
@@ -38,6 +38,13 @@
     font-size: 2rem;
     font-weight: bold;
     color: inherit;
+}
+
+.links {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+    flex-direction: row;
 }
 
 .section button {

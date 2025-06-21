@@ -20,9 +20,23 @@ export default function Homepage() {
             </section>
             <section className="section section3">
                 <h2>My Other Sites</h2>
-                <button onClick={() => navigate('/')}>
-                    View Bio
-                </button>
+                <div className="links">
+                    <a href="https://github.com/dmind44" target="_blank" rel="noopener noreferrer">
+                        <button>
+                            Github
+                        </button>
+                    </a>
+                    <a href="https://linkedin.com/in/david-mindlin" target="_blank" rel="noopener noreferrer">
+                        <button>
+                            LinkedIn
+                        </button>
+                    </a>
+                    <a href="https://david064.itch.io/" target="_blank" rel="noopener noreferrer">
+                        <button>
+                            Itch.io
+                        </button>
+                    </a>
+                </div>
             </section>
         </div>
     );
