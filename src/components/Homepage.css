@@ -6,7 +6,7 @@
 
 .section {
     width: 100%;
-    height: 250px;
+    height: 33.33vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,15 +18,17 @@
 
 .section1 {
     background-color: #1B3F6E;
+    color: #EFEFEF;
 }
 
 .section2 {
     background-color: #A6A090;
-    color: #FFF;
+    color: #000000;
 }
 
 .section3 {
     background-color: #1A2933;
+    color: #EFEFEF;
 }
 
 .section4 {
