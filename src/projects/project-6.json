@@ -1,9 +1,0 @@
-{
-  "id": "project-6",
-  "title": "Stealth Claus",
-  "logline": "Despite Christmas cheer at an all time low, Santa must still deliver gifts but without being caught by the vigilant residents.",
-  "description": "Made for the 2025 thatgamecompany x COREBLAZER Game Jam. The theme was \"generosity,\" which is why we created a Santa Claus-based game in June. Collaborated with one friend and made the game in about 3 weeks. Created a tile-based level editor in Unity, which allowed us to craft 6 levels in this pixelated top-down 2D Adventure. Pixel art assets made by us, with the sole exception of the title screen art which was generated with OpenAI Sora.",
-  "thumbnail": "images/Santa.png",
-  "credits": "Co-developer",
-  "tech": ["Unity"]
-}
