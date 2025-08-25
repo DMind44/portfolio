@@ -107,6 +107,7 @@ export const technologies: Technologies = {
     { text: 'Bevy', logo: 'mdi:bevy-engine' },
     { text: 'Python', logo: 'mdi:language-python' },
   ],
+  'Web Servers': [],
   Databases: [
     { text: 'MySQL', logo: 'cib:mysql' },
     { text: 'PostgreSql', logo: 'cib:postgresql' },
