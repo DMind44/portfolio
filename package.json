@@ -12,12 +12,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/cojocaru-david/portfolio.git"
+    "url": "https://github.com/dmind44/portfolio.git"
   },
   "bugs": {
-    "url": "https://github.com/cojocaru-david/portfolio/issues"
+    "url": "https://github.com/dmind44/portfolio/issues"
   },
-  "homepage": "https://cojocarudavid.me",
+  "homepage": "https://dmind44.github.io/",
   "name": "portfolio3",
   "type": "module",
   "version": "1.1.0",
