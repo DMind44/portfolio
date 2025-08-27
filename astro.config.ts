@@ -122,5 +122,8 @@ export default defineConfig({
     remarkPlugins: [remarkMath, remarkEmoji, remarkSectionize],
   },
 
-  adapter: vercel()
+  //adapter: vercel()
+  adapter: node({
+    mode: "standalone"
+  }),
 })
