@@ -31,11 +31,11 @@ jobs:
 #        env:
 #          PUBLIC_POKEAPI: 'https://pokeapi.co/api/v2' # Use single quotation marks for the variable value. (optional)
 
-#      - name: Upload Artifact
-#        uses: actions/upload-pages-artifact@v3
-#        with:
-#          path: dist/client # The root location of your Astro project inside the repository. (optional)
-#          name: artifact-${{ github.run_number }}
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist/client # The root location of your Astro project inside the repository. (optional)
+          name: artifact-${{ github.run_number }}
 
   deploy:
     needs: build
