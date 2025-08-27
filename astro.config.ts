@@ -19,6 +19,8 @@ import { pluginLineNumbers } from '@expressive-code/plugin-line-numbers'
 import tailwindcss from "@tailwindcss/vite";
 import vercel from '@astrojs/vercel';
 
+import node from '@astrojs/node';
+
 function rehypeDemoteH1AndStripTitle() {
   return (tree: any) => {
     const walk = (node: any, parent: any | null, indexInParent: number | null) => {
@@ -122,8 +124,7 @@ export default defineConfig({
     remarkPlugins: [remarkMath, remarkEmoji, remarkSectionize],
   },
 
-  //adapter: vercel()
   adapter: node({
-    mode: "standalone"
-  }),
+    mode: 'standalone'
+  })
 })

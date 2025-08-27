@@ -33,6 +33,7 @@
     "@astrojs/check": "^0.9.4",
     "@astrojs/markdown-remark": "^6.3.5",
     "@astrojs/mdx": "^4.3.3",
+    "@astrojs/node": "^9.4.3",
     "@astrojs/react": "^4.3.0",
     "@astrojs/rss": "^4.0.12",
     "@astrojs/vercel": "^8.0.4",
