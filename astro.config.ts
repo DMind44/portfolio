@@ -47,6 +47,7 @@ function rehypeDemoteH1AndStripTitle() {
 
 export default defineConfig({
   site: 'https://dmind44.github.io',
+  output: "static",
 
   integrations: [expressiveCode({
     themes: ['catppuccin-latte', 'ayu-dark'],
