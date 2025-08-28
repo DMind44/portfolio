@@ -27,7 +27,7 @@ jobs:
       - name: install deps
         run: pnpm install
       - name: build with astro
-        run: npx astro check && npx astro build
+        run: pnpm astro check && pnpm astro build
       - name: upload artifact
         uses: actions/upload-artifact@v4
         with:
