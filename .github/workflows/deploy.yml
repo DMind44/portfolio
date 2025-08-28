@@ -22,11 +22,18 @@ jobs:
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
-      - name: Install, build, and upload your site
-        uses: withastro/action@v3
-        with:
-          node-version: 20 # The specific version of Node that should be used to build your site. Defaults to 20. (optional)
-          package-manager: pnpm@latest # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
+#      - name: Install, build, and upload your site
+##        uses: withastro/action@v3
+        - name: build with astro
+        uses: npx astro build
+        - name: upload artifact
+          uses: actions/upload-artifact@v4
+          with:
+            name: artifact-${{ github.run_id }}
+            path: dist/client/
+#        with:
+#          node-version: 20 # The specific version of Node that should be used to build your site. Defaults to 20. (optional)
+#          package-manager: pnpm@latest # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
 #        env:
 #          PUBLIC_POKEAPI: 'https://pokeapi.co/api/v2' # Use single quotation marks for the variable value. (optional)
 
