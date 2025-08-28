@@ -3,6 +3,7 @@ import { defineConfig } from 'astro/config'
 import mdx from '@astrojs/mdx'
 import react from '@astrojs/react'
 import icon from 'astro-icon'
+import relativeLinks from 'astro-relative-links'
 
 import expressiveCode from 'astro-expressive-code'
 import { rehypeHeadingIds } from '@astrojs/markdown-remark'
@@ -66,7 +67,7 @@ export default defineConfig({
           },
       },
     },
-  }), mdx(), react(), icon()],
+  }), mdx(), react(), icon(), relativeLinks()],
 
   vite: {
     plugins: [tailwindcss() as any],
