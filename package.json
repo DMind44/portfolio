@@ -10,13 +10,6 @@
     "portfolio",
     "website"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/dmind44/portfolio.git"
-  },
-  "bugs": {
-    "url": "https://github.com/dmind44/portfolio/issues"
-  },
   "homepage": "https://dmind44.github.io/",
   "name": "portfolio3",
   "type": "module",
