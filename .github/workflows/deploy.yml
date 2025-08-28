@@ -38,11 +38,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Upload Artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: dist/client # The root location of your Astro project inside the repository. (optional)
-          name: artifact-${{ github.run_number }}
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
