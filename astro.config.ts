@@ -50,7 +50,7 @@ function rehypeDemoteH1AndStripTitle() {
 
 export default defineConfig({
   site: 'https://dmind44.github.io',
-  base: '/portfolio',
+  //base: '/portfolio',
   output: "static",
 
   integrations: [expressiveCode({
