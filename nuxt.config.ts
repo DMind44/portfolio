@@ -15,6 +15,6 @@ export default defineNuxtConfig({
       htmlAttrs: { lang: 'en' },
     },
   },
-  colorMode: { classSuffix: '', preference: 'dark' },
-  compatibilityDate: '2024-04-03',
+  colorMode: { classSuffix: '', preference: 'light' },
+  compatibilityDate: '2026-11-04',
 })

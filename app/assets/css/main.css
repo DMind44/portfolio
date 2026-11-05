@@ -5,7 +5,7 @@
    (fraunces+inter for most; phosphor overrides with mono). Base styles below
    consume tokens only. */
 
-@import './themes/phosphor.css';
+@import './themes/riso.css';
 
 :root {
   /* space scale */
