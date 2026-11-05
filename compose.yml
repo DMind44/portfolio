@@ -1,0 +1,28 @@
+# Runs on the droplet. `docker compose pull && docker compose up -d` after every deploy.
+# If the repo/image name changes, update the site image path here.
+
+services:
+  site:
+    image: ghcr.io/dmind44/portfolio:latest
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8080:80"
+    security_opt:
+      - no-new-privileges:true
+
+  caddy:
+    image: caddy:2
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    security_opt:
+      - no-new-privileges:true
+
+volumes:
+  caddy_data:
+  caddy_config:

@@ -1,0 +1,7 @@
+# Auto-HTTPS once DNS for these names points at this droplet.
+# Future live-data features (project stats, guestbook, ...) get a /api/* handle
+# pointing at their one-container-per-feature service.
+
+staging.david64.dev, david64.dev {
+	reverse_proxy site:80
+}
