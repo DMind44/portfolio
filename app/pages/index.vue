@@ -19,7 +19,7 @@ const cards = computed(() => {
     <p class="lede">
       LA-based. Platform and infrastructure work at Datadog and Unified
       Residential Management; M.S. in Game Design &amp; Development at USC, where
-      I ran UX and usability for the advanced game projects here.
+      I performed game design, programming, UX, and usability for a variety of games projects.
     </p>
     <p class="cta">
       <NuxtLink to="/projects">browse the projects →</NuxtLink>

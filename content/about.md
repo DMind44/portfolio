@@ -1,10 +1,8 @@
 # About
 
-LA-based full-stack software engineer. I've spent most of my professional life
-on platform and infrastructure work — AWS integrations and on-call ownership at
+LA-based full-stack software engineer and game developer. I've spent most of my professional life on platform and infrastructure work — AWS integrations and on-call ownership at
 Datadog, full-stack internal tools, APIs and data pipelines at Unified
-Residential Management — with a running habit of building the interface and the
-backend it sits on.
+Residential Management. Currently focused on media systems, games, and interactive software expereinces. 
 
 Alongside that, game development: an M.S. in Game Design & Development at USC
 School of Cinematic Arts, where I was the UX & usability specialist on two
