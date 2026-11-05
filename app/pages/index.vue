@@ -12,7 +12,7 @@ const cards = computed(() => {
 
 <template>
   <section class="hero">
-    <h1>David Minblin</h1>
+    <h1>David Mindlin</h1>
     <p class="tagline">
       Full-stack software engineer — web platforms, live systems, and game UX.
     </p>
