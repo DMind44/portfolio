@@ -3,7 +3,6 @@ name: 'Now Hiring: Shadow Government'
 description: 'Play as job recruiters in the shadow government competing to get your cohorts hired, and you must stop at no end to do so -- even if it means digging up dirt on your coworkers applicants.'
 tags: ['tabletop', 'gamedev']
 image: '/static/nowhiringlogo.png'
-link: 'https://dreamhome.cojocarudavid.me'
 ---
 ## Premise
 Play as job recruiters in the shadow government competing to get your cohorts hired; you must stop at no end to do so -- even if it means digging up dirt on your coworkers applicants.

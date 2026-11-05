@@ -3,7 +3,6 @@ name: 'Penguin Adventure'
 description: 'An immersive penguin walking simulator. Help a drunk penguin get home from the bar!'
 tags: ['unity', 'gamedev']
 image: '/static/penguin1.png'
-link: 'https://dreamhome.cojocarudavid.me'
 ---
 ## Premise
 In Penguin Adventure, you play as a penguin who has had a few too many. With the festivities dying down, he must now brave the long walk home.

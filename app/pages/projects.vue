@@ -1,6 +1,8 @@
 <script setup lang="ts">
 const { data: projects } = await useAsyncData('projects', () =>
   queryCollection('project').all())
+
+useHead({ title: 'Projects' })
 </script>
 
 <template>

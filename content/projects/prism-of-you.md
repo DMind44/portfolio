@@ -3,7 +3,6 @@ name: 'Prism of You'
 description: 'Emergent sandbox of emotional expression within the mysterious world of the Prism'
 tags: ['unity', 'gamedev']
 image: '/static/prismcover.png'
-link: 'https://dreamhome.cojocarudavid.me'
 ---
 ## Premise
 Prism of you is an emergent sandbox of emotional expression within the mysterious world of the Prism.

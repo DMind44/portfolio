@@ -3,7 +3,6 @@ name: 'Unchained: Tale of Enra'
 description: 'Tactics meet empathy; diplomacy and building trust is your greatest weapon.'
 tags: ['unity', 'gamedev']
 image: '/static/unchainedcover.png'
-link: 'https://dreamhome.cojocaruddiavid.me'
 ---
 ## Premise
 Unchained is a tactical RPG where you build bonds with allies to unlock abilities, negotiate with enemies to recruit them, and shape your journey through choices that blend strategy, diplomacy, and emotional storytelling.

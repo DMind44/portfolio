@@ -3,7 +3,6 @@ name: 'Matchmaker Mayhem'
 description: 'A true test of communication, match compatible singles on dates before time runs out in this chaotic tabletop game.'
 tags: ['tabletop', 'gamedev']
 image: '/static/matchmakercover.png'
-link: 'https://dreamhome.cojocarudavid.me'
 ---
 ## Premise
 A cooperative race against time where you and your matchmaking partner try to match a selection of eligible singles before the deadline. Communication skills and chemistry are a must when trying to balance compatibility between traits, star signs, and location all while working with limited information.
