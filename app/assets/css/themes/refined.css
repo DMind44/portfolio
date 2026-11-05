@@ -1,0 +1,51 @@
+/* "Refined Current" — port of oldportfolio's real oklch palette (not an
+   approximation): warm bronze on paper, soft shadows, 1px borders.
+   Swap in via main.css @import if chosen. */
+
+:root {
+  --font-display: 'Fraunces', serif;
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  --background: oklch(0.98 0 0);
+  --foreground: oklch(0.24 0 0);
+  --card: oklch(0.99 0 0);
+  --card-foreground: oklch(0.24 0 0);
+  --primary: oklch(0.43 0.04 42);          /* bronze */
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.92 0.07 76.67);     /* cream ochre */
+  --secondary-foreground: oklch(0.35 0.07 41.41);
+  --accent: oklch(0.93 0 0);
+  --accent-foreground: oklch(0.24 0 0);
+  --muted: oklch(0.95 0 0);
+  --muted-foreground: oklch(0.5 0 0);
+  --border: oklch(0.88 0 0);
+  --border-width: 1px;
+  --ring: oklch(0.43 0.04 42);
+
+  --radius: 0.5rem;
+  --radius-lg: 0.75rem;
+  --shadow-md: 0 1px 3px 0 oklch(0 0 0 / 0.1), 0 2px 4px -1px oklch(0 0 0 / 0.1);
+  --shadow-lg: 0 1px 3px 0 oklch(0 0 0 / 0.1), 0 4px 6px -1px oklch(0 0 0 / 0.1);
+}
+
+.dark {
+  --background: oklch(0.18 0 0);
+  --foreground: oklch(0.95 0 0);
+  --card: oklch(0.21 0 0);
+  --card-foreground: oklch(0.95 0 0);
+  --primary: oklch(0.92 0.05 67.14);       /* amber */
+  --primary-foreground: oklch(0.2 0.02 201.14);
+  --secondary: oklch(0.32 0.02 67);        /* chip ink A: amber-brown */
+  --secondary-foreground: oklch(0.92 0.05 67.14);
+  --accent: oklch(0.29 0 0);
+  --accent-foreground: oklch(0.95 0 0);
+  --muted: oklch(0.25 0 0);
+  --muted-foreground: oklch(0.77 0 0);
+  --border: oklch(0.24 0.01 88.77);
+  --border-width: 1px;
+  --ring: oklch(0.92 0.05 67.14);
+
+  --shadow-md: 0 1px 3px 0 oklch(0 0 0 / 0.35), 0 2px 4px -1px oklch(0 0 0 / 0.35);
+  --shadow-lg: 0 1px 3px 0 oklch(0 0 0 / 0.35), 0 4px 6px -1px oklch(0 0 0 / 0.35);
+}

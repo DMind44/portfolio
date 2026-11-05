@@ -1,0 +1,51 @@
+/* "Indigo Slate" — cool neutral grays, indigo primary, cyan accent.
+   designed values (approximations of the theme-lab hexes), soft shadows.
+   Swap in via main.css @import if chosen. */
+
+:root {
+  --font-display: 'Fraunces', serif;
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  --background: oklch(0.97 0.004 250);     /* ≈ #F7F8FA cool white */
+  --foreground: oklch(0.27 0.012 255);     /* ≈ #23262B */
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.27 0.012 255);
+  --primary: oklch(0.53 0.21 268);         /* ≈ #4F52E0 indigo */
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.53 0.21 268);       /* chip ink A: indigo */
+  --secondary-foreground: oklch(1 0 0);
+  --accent: oklch(0.94 0.04 220);          /* ≈ #D9F3FA pale cyan */
+  --accent-foreground: oklch(0.42 0.08 225);
+  --muted: oklch(0.93 0.006 250);
+  --muted-foreground: oklch(0.53 0.02 255);
+  --border: oklch(0.9 0.008 250);
+  --border-width: 1px;
+  --ring: oklch(0.53 0.21 268);
+
+  --radius: 0.5rem;
+  --radius-lg: 0.75rem;
+  --shadow-md: 0 2px 10px oklch(0.25 0.06 260 / 0.08);
+  --shadow-lg: 0 4px 18px oklch(0.25 0.06 260 / 0.1);
+}
+
+.dark {
+  --background: oklch(0.19 0.015 260);     /* ≈ #17181D blue-black */
+  --foreground: oklch(0.92 0.01 250);
+  --card: oklch(0.24 0.015 260);
+  --card-foreground: oklch(0.92 0.01 250);
+  --primary: oklch(0.7 0.15 268);          /* ≈ #8E93F9 soft indigo */
+  --primary-foreground: oklch(0.19 0.015 260);
+  --secondary: oklch(0.7 0.15 268);        /* chip ink A: soft indigo */
+  --secondary-foreground: oklch(0.19 0.015 260);
+  --accent: oklch(0.66 0.1 218);           /* ≈ #2FA8C9 cyan */
+  --accent-foreground: oklch(0.19 0.015 260);
+  --muted: oklch(0.27 0.015 260);
+  --muted-foreground: oklch(0.65 0.015 255);
+  --border: oklch(0.31 0.015 260);
+  --border-width: 1px;
+  --ring: oklch(0.7 0.15 268);
+
+  --shadow-md: 0 2px 10px oklch(0 0 0 / 0.45);
+  --shadow-lg: 0 4px 18px oklch(0 0 0 / 0.45);
+}

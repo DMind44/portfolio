@@ -1,0 +1,54 @@
+/* "Phosphor Terminal" — dark-first CRT aesthetic (green phosphor on
+   near-black, amber accents); cream "paper terminal" as light fallback.
+   designed values (approximations of the theme-lab hexes), glow shadows.
+   NOTE: unlike the other themes this one is dark-FIRST — if selected,
+   consider colorMode default 'dark' in nuxt.config.
+   Swap in via main.css @import if chosen. */
+
+:root {
+  --font-display: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --font-sans: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  --background: oklch(0.94 0.02 110);      /* ≈ #F2EFDF paper cream */
+  --foreground: oklch(0.35 0.06 165);      /* ≈ #1A3B2F green ink */
+  --card: oklch(0.97 0.015 110);
+  --card-foreground: oklch(0.35 0.06 165);
+  --primary: oklch(0.58 0.11 80);         /* ≈ #B47700 amber ink */
+  --primary-foreground: oklch(0.96 0.01 110);
+  --secondary: oklch(0.91 0.02 165);       /* chip ink A: green-tinted panel */
+  --secondary-foreground: oklch(0.35 0.06 165);
+  --accent: oklch(0.87 0.02 165);          /* chip ink B: darker panel */
+  --accent-foreground: oklch(0.35 0.06 165);
+  --muted: oklch(0.88 0.02 110);
+  --muted-foreground: oklch(0.45 0.05 165);
+  --border: oklch(0.35 0.06 165);
+  --border-width: 1px;
+  --ring: oklch(0.58 0.11 80);
+
+  --radius: 0.125rem;
+  --radius-lg: 0.25rem;
+  --shadow-md: 0 0 14px oklch(0.35 0.06 165 / 0.25);
+  --shadow-lg: 0 0 20px oklch(0.35 0.06 165 / 0.3);
+}
+
+.dark {
+  --background: oklch(0.22 0.03 165);      /* ≈ #0E1F1A green-black */
+  --foreground: oklch(0.82 0.19 152);      /* ≈ #52E582 phosphor green */
+  --card: oklch(0.26 0.03 165);
+  --card-foreground: oklch(0.82 0.19 152);
+  --primary: oklch(0.82 0.14 85);          /* ≈ #FFC24B amber */
+  --primary-foreground: oklch(0.22 0.03 165);
+  --secondary: oklch(0.29 0.03 165);       /* chip ink A: dark panel */
+  --secondary-foreground: oklch(0.82 0.19 152);
+  --accent: oklch(0.29 0.03 165);          /* chip ink B: dark panel */
+  --accent-foreground: oklch(0.82 0.19 152);
+  --muted: oklch(0.29 0.03 165);
+  --muted-foreground: oklch(0.68 0.1 152);
+  --border: oklch(0.82 0.19 152);          /* green border, lab-style */
+  --border-width: 1px;
+  --ring: oklch(0.82 0.19 152);
+
+  --shadow-md: 0 0 18px oklch(0.82 0.19 152 / 0.18);
+  --shadow-lg: 0 0 26px oklch(0.82 0.19 152 / 0.25);
+}
